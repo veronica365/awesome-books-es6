@@ -11,11 +11,15 @@
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
+  - [Install](#install)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
+  - [Run tests](#run-tests)
+- [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 # 📖 Awesome books with es6 <a name="about-project"></a>
@@ -44,8 +48,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
@@ -64,6 +66,14 @@ Clone this repository to your desired folder:
   git clone git@github.com:veronica365/awesome-books-es6.git
 ```
 
+### Install
+
+Install this project dependencies with:
+
+```sh
+  npm install
+```
+
 ### Usage
 
 To run the project, execute the following command:
@@ -71,11 +81,37 @@ To run the project, execute the following command:
 - open the repo folder `awesome-books-es6`
 - Rightclick on the index.html file and select open in the browser
 
+### Run tests
+
+To run tests to check the lint errors, run the following command:
+
+```sh
+  npx eslint . --fix
+```
+
+### Deployment
+
+You can deploy this project using:
+
+```sh
+  GitHub Pages
+
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Author1**
 
 - GitHub: [@verocnica365](https://github.com/verocnica365)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [x] **[Adding new styles to improve the designs look and feel]**
+- [x] **[Connecting the app to an API to persist the changes to a database]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
