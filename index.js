@@ -1,3 +1,4 @@
+import { DateTime } from './modules/luxon.js';
 import {
   header,
   booksList,
@@ -68,21 +69,10 @@ formText.addEventListener('submit', (event) => {
   toggleAddSection();
 });
 
-const formatDate = () => {
-  const date = new Date();
-  const month = date.toLocaleString('default', { month: 'long' });
-  const day = date.getDate();
-  const year = date.getFullYear();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  const seconds = date.getSeconds();
-  const ampm = hours >= 12 ? 'pm' : 'am';
-  hours %= 12;
-  hours = hours || 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? `0${minutes}` : minutes;
-  const strTime = `${month} ${day} ${year}, ${hours}:${minutes}:${seconds} ${ampm}`;
-  return strTime;
-};
-
-const date = document.querySelector('.date span');
-date.innerHTML = formatDate();
+const dateElement = document.querySelector('.date span');
+setInterval(() => {
+  const date = DateTime.now();
+  dateElement.innerHTML = date.toLocaleString(
+    DateTime.DATETIME_MED_WITH_SECONDS,
+  );
+}, 1000);
