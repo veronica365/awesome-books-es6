@@ -1,6 +1,6 @@
 export default class Library {
   static displayData() {
-    let innerHTML = "";
+    let innerHTML = '';
     const books = this.listData();
     for (let i = 0; i < books.length; i += 1) {
       innerHTML += `
@@ -14,7 +14,7 @@ export default class Library {
                 </article>
                 `;
     }
-    document.querySelector("#articles").innerHTML = innerHTML;
+    document.querySelector('#articles').innerHTML = innerHTML;
     return innerHTML;
   }
 
@@ -27,13 +27,13 @@ export default class Library {
         author: authorText,
       });
       const myBooks = JSON.stringify(newBooks1);
-      localStorage.setItem("books", myBooks);
+      localStorage.setItem('books', myBooks);
       this.displayData();
     }
   }
 
   static listData() {
-    const getBooks = JSON.parse(localStorage.getItem("books"));
+    const getBooks = JSON.parse(localStorage.getItem('books'));
     const books = getBooks || [];
     return books;
   }
@@ -42,9 +42,9 @@ export default class Library {
     let bookData = Library.listData();
     bookData = bookData.filter((book) => id !== book.id);
     const myBooks = JSON.stringify(bookData);
-    localStorage.setItem("books", myBooks);
-    document.querySelector("#articles").innerHTML = Library.displayData();
+    localStorage.setItem('books', myBooks);
+    document.querySelector('#articles').innerHTML = Library.displayData();
   }
 }
 
-window.Library = Library
+window.Library = Library;

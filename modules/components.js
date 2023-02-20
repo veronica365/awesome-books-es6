@@ -1,5 +1,4 @@
-export const header = () => {
-  return `
+export const header = () => `
       <header>
         <nav>
           <div class="logo">Awesome Books</div>
@@ -28,20 +27,16 @@ export const header = () => {
         <span></span>
       </div>
       <main></main>`;
-};
 
-export const booksList = () => {
-  return `
+export const booksList = () => `
     <h1 class = "heading">All awesome books</h1>
     <section id="articles"></section>
   `;
-};
 
-export const addBook = () => {
-  return `
+export const addBook = () => `
       <section id="add-book" class="add-book hidden">
         <h2>Add a new book</h2>
-        <form id="articleForm">
+        <form id="article-form">
           <div>
             <label>
               <input type="text" name="titleText" placeholder="Title" />
@@ -59,10 +54,8 @@ export const addBook = () => {
           </div>
         </form>
       </section>`;
-};
 
-export const contactIfno = () => {
-  return `<section id="contact-info" class="contact-info hidden">
+export const contactIfno = () => `<section id="contact-info" class="contact-info hidden">
             <h2>Contact information</h2>
             <div>
                 <div>
@@ -76,10 +69,8 @@ export const contactIfno = () => {
                 </div>
             </div>
         </section>`;
-};
 
-export const footer = () => {
-  return `
+export const footer = () => `
     <footer>
       <div class="footer-wrap">
         <div>
@@ -87,4 +78,3 @@ export const footer = () => {
         </div>
       </div>
     </footer>`;
-};
